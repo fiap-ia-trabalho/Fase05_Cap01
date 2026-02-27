@@ -18,8 +18,7 @@
 
 
 ## 📜 Descrição
-
-O projeto tem como objetivo desenvolvimento de algoritmo para previsão de rendimento de safra através de aplicação de modelos de machine learning não supervisionado, bem como analisar custos para implementação na AWS.
+O projeto tem como objetivo desenvolver um algoritmo para previsão de rendimento de safra por meio da aplicação de modelos de machine learning não supervisionado, além de realizar a análise de viabilidade e estimativa de custos para sua implementação na AWS.
 
 ## 📁 Estrutura de pastas
 
@@ -37,12 +36,9 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
-
 ## 🔧 Como executar o código
 
 *Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
-
 
 ## 🗃 Histórico de lançamentos
 
