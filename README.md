@@ -48,9 +48,9 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
     * 
 * 0.3.0 - XX/XX/2024
     * 
-* 0.2.0 - XX/XX/2024
+* 0.2.0 - 07/03/2026 - Simulação aplicação AWS
     * 
-* 0.1.0 - 27/02/2026
+* 0.1.0 - 27/02/2026 - Analise inicial dos dados
     *
 
 ## 📋 Licença
