@@ -87,14 +87,13 @@ O notebook contempla:
 
 - Os modelos supervisionados apresentaram bom desempenho preditivo para estimativa de rendimento agrícola.
 - A análise não supervisionada permitiu identificar agrupamentos de condições ambientais e observações discrepantes.
-- Na simulação AWS, a região da **Virgínia do Norte** apresentou menor custo estimado.
-- Mesmo assim, a recomendação do projeto foi a região de **São Paulo**, devido à **menor latência** e às **restrições legais de armazenamento no exterior**.
+- A análise de computação em nuvem mostrou que decisões de infraestrutura não devem considerar apenas custo, mas também fatores como latência, conformidade legal e contexto de negócio.
 
 ---
 
 ## Notebook do projeto
 
-[ Acessar notebook Jupyter ](./CAP1%20-%20FarmTech%20na%20Era%20da%20Cloud%20Computing.ipynb)
+[ Acessar notebook Jupyter ](##PENDENTE)
 
 > Importante: para correção, o notebook deve estar com todas as células executadas.
 
