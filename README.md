@@ -18,41 +18,104 @@
 
 
 ## 📜 Descrição
-O projeto tem como objetivo desenvolver um algoritmo para previsão de rendimento de safra por meio da aplicação de modelos de machine learning não supervisionado, além de realizar a análise de viabilidade e estimativa de custos para sua implementação na AWS.
+Este projeto foi desenvolvido para a Fase 5 da FIAP com foco em **Machine Learning** e **Cloud Computing**, dentro do contexto da startup fictícia **FarmTech Solutions**.
 
-## 📁 Estrutura de pastas
+A proposta consiste em analisar uma base de dados agrícolas contendo informações sobre:
+- Cultura
+- Precipitação
+- Umidade específica
+- Umidade relativa
+- Temperatura
+- Rendimento da safra
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+O trabalho foi dividido em duas frentes:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
+### Entrega 1 — Machine Learning
+- Análise exploratória da base
+- Identificação de padrões e outliers
+- Clusterização com algoritmos não supervisionados
+- Construção de **5 modelos preditivos de regressão**
+- Avaliação de desempenho com métricas apropriadas
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+### Entrega 2 — Cloud Computing
+- Simulação de custos na AWS
+- Comparação entre as regiões **São Paulo** e **Virgínia do Norte**
+- Justificativa técnica e legal da escolha da infraestrutura
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
+---
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+## Objetivo
 
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
+Desenvolver uma solução analítica e preditiva capaz de estimar o rendimento agrícola com base em variáveis ambientais, além de avaliar a viabilidade de hospedagem da aplicação em ambiente de nuvem.
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+---
 
-## 🔧 Como executar o código
+## Dataset utilizado
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+Arquivo: `crop_yield.csv`
 
-## 🗃 Histórico de lançamentos
+A base contém 156 registros distribuídos entre 4 culturas agrícolas:
+- Cocoa, beans
+- Oil palm fruit
+- Rice, paddy
+- Rubber, natural
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - 07/03/2026 - Simulação aplicação AWS
-    * 
-* 0.1.0 - 27/02/2026 - Analise inicial dos dados
-    *
+---
 
-## 📋 Licença
+## Principais etapas do notebook
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+O notebook contempla:
+
+1. Importação e leitura da base  
+2. Estatística descritiva  
+3. Histogramas, boxplots e heatmap de correlação  
+4. Modelagem preditiva com:
+   - Linear Regression
+   - Random Forest Regressor
+   - Gradient Boosting Regressor
+   - SVR
+   - KNeighbors Regressor
+5. Clusterização com:
+   - K-Means
+   - DBSCAN
+6. Análise de outliers  
+7. Simulação de custos AWS  
+
+---
+
+## Principais resultados
+
+- Os modelos supervisionados apresentaram bom desempenho preditivo para estimativa de rendimento agrícola.
+- A análise não supervisionada permitiu identificar agrupamentos de condições ambientais e observações discrepantes.
+- Na simulação AWS, a região da **Virgínia do Norte** apresentou menor custo estimado.
+- Mesmo assim, a recomendação do projeto foi a região de **São Paulo**, devido à **menor latência** e às **restrições legais de armazenamento no exterior**.
+
+---
+
+## Notebook do projeto
+
+[ Acessar notebook Jupyter ](./CAP1%20-%20FarmTech%20na%20Era%20da%20Cloud%20Computing.ipynb)
+
+> Importante: para correção, o notebook deve estar com todas as células executadas.
+
+---
+
+## Vídeos demonstrativos
+
+### Entrega 1 — Machine Learning
+[ Inserir link do vídeo no YouTube ]
+
+### Entrega 2 — AWS
+[ Inserir link do vídeo no YouTube ]
+
+---
+
+## Como executar o projeto
+
+### Requisitos
+- Python 3.10+
+- Jupyter Notebook ou Google Colab
+
+### Bibliotecas utilizadas
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
