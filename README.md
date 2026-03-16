@@ -93,7 +93,7 @@ O notebook contempla:
 
 ## Notebook do projeto
 
-[ Acessar notebook Jupyter ] https://colab.research.google.com/drive/1_sKZ5Exa9XY4d8-A10MnmGUINMwq3WX6#scrollTo=c0996c18
+https://colab.research.google.com/drive/1_sKZ5Exa9XY4d8-A10MnmGUINMwq3WX6#scrollTo=c0996c18
 
 > Importante: para correção, o notebook deve estar com todas as células executadas.
 
@@ -105,7 +105,7 @@ O notebook contempla:
 https://youtu.be/mee4sucIaTw
 
 ### Entrega 2 — AWS
-[ Inserir link do vídeo no YouTube ]
+https://youtu.be/Z_3WqeunGow
 
 ---
 
